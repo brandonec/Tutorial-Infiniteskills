@@ -1,0 +1,4 @@
+<div class="comment">
+	<h3>On <%= comment.created_at.strftime('%m/%d/%Y %I:%M %p') %> <%= comment.user %> said: </h3>
+	<%= raw(comment.content) %>
+</div>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blog</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div id="wrapper">
+	<header>
+		<h2><%= link_to 'My Rails Blog', root_path %></h2>
+		<h3><%= link_to "'Learnin' 'Bout Rails", root_path %></h3>
+	</header>
+	<% [:notice, :alert].each do |level| %>
+		<% if flash[level] %>
+			<div class="flash <%= level %>"><%= flash[level] %></div>
+		<% end %>
+    <% end %>
+	<%= yield %>
+	<%= sidebar %>
+	<footer>
+		<p>A sample Rails app from <a href="http://www.infiniteskills.com/" target="_blank">Infinite Skills</a></p>
+	</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,6 @@
+Comment Posted on <%= @comment.post.title %>
+===============================================
+ 
+User <%= @comment.user %> posted the following comment on <%= @comment.created_at.strftime('%m/%d/%Y %I:%M %p') %>:
+ 
+<%= @comment.content %>

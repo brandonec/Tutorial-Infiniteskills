@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+# This model initially had no columns defined.  If you add columns to the
+# model remove the '{}' from the fixture names and add the columns immediately
+# below each fixture, per the syntax in the comments below
+#
+one:
+  post_id: 1
+  user_id: 2
+  content: 'This is a great post! Really like the way you''re starting out!'
+  created_at: <%= Time.now + 8.days %>
+two:
+  post_id: 2
+  user_id: 2
+  content: 'I love Lester Young!'
+  created_at: <%= Time.now + 2.days %>
+three:
+  post_id: 2
+  user_id: 3
+  content: 'Lester - the prez - absolutely revolutionized jazz for me'
+  created_at: <%= Time.now + 2.days %>

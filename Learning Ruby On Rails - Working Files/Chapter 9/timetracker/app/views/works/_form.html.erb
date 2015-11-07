@@ -1,0 +1,33 @@
+<% if @work.errors.any? %>
+	<div id="errors">
+		<p>Please correct the following <%= pluralize(@work.errors.count, "error") %>:</p>
+		<ul>
+			<% @work.errors.full_messages.each do |msg| %>
+				<li><%= msg %></li>
+			<% end %>
+		</ul>
+	</div>
+<% end %>
+
+<% doajax = false unless (defined? doajax) %>
+<%= form_for(@work, remote: doajax) do |f| %>
+	<div>
+		<%= f.label :project_id %>
+		<%= f.collection_select(:project_id, Project.all, :id, :name, prompt: true) %>
+	</div>
+	<div>
+		<%= f.label :user_id %>
+		<%= f.collection_select(:user_id, User.all.order('lname, fname'), :id, :to_s, prompt: true) %>
+	</div>
+	<div>
+		<%= f.label :datetimeformed, 'Date/Time Performed' %>
+		<%= f.datetime_select :datetimeperformed %>
+	</div>
+	<div>
+		<%= f.label :hours %>
+		<%= f.select(:hours, [1,2,3,4,5,6,7,8], prompt: true) %>
+	</div>
+	<div>
+		<%= f.submit @work.new_record? ? "Create Work" : "Update Work"  %>
+	</div>
+<% end %>

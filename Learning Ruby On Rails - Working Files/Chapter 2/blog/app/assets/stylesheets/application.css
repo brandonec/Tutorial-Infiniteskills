@@ -1,0 +1,235 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+body {
+	font-family:Helvetica,Arial,sans-serif;
+	background-color:#dedede;
+	font-weight: 200;
+}
+
+h1, h2, h3 {
+	font-weight:200;
+	margin:0;
+	padding:0;
+	color:#444;
+}
+
+h1 {
+	border-bottom:1px solid #666;
+	margin-bottom:20px;
+}
+
+a {
+	text-decoration: none;
+	color:#0280B8;
+}
+
+a:hover {
+	text-decoration: underline;
+	color:#029EBA;
+}
+
+p {
+	margin:0 0 15px 0;
+	padding:0;
+}
+
+input, select, textarea {
+	font-family:Helvetica,Arial,sans-serif;
+	font-size:12px;
+}
+
+input {
+	padding:2px;
+}
+
+textarea {
+	padding:4px;
+}
+
+form div {
+	margin-bottom:15px;
+}
+
+form div.checkboxes label {
+	display: inline;
+}
+
+form div label, form div label.block {
+	display: block;
+	font-style:italic;
+}
+
+form div.field_with_errors {
+	margin-bottom:0;
+}
+
+form div.field_with_errors label {
+	color:#900;
+}
+
+form input {
+	width: 50%;
+}
+
+form input[type="submit"], form input[type="checkbox"], form input[type="radio"] {
+	width: auto;
+}
+
+form textarea {
+	width: 50%;
+}
+
+#wrapper {
+	width:68%;
+	margin:0 auto;
+	background-color:#fff;
+	padding:2% 5%;
+	box-shadow:0 0 15px #999;
+}
+
+header h2 {
+	text-align:right;
+	font-size:20px;
+	text-transform: uppercase;
+	margin-top:10px;
+}
+
+header h3 {
+	text-align:right;
+	font-size:14px;
+	text-transform: uppercase;
+	margin-bottom:20px;
+}
+
+div.flash {
+	padding:10px;
+	margin-bottom:20px;
+	background-color:#efefef;
+}
+
+div.flash.notice {
+	color:#090;
+}
+
+div.flash.alert {
+	color:#900;
+}
+
+div.post_details {
+	font-style: italic;
+	color:#888;
+	padding:0 0 15px 0;
+}
+
+div.author_edit_post {
+	font-style: italic;
+	color:#888;
+	padding:0 0 15px 0;	
+}
+
+article.fullpost, section.listing, article.devise, article.form {
+	width:66%;
+	float:left;
+	font-weight:200;
+	font-size:14px;
+	line-height:18px;
+	padding-bottom:30px;
+}
+
+article.post {
+	padding-bottom:20px;
+	border-bottom: 1px solid #666;
+	margin-bottom:20px;
+}
+
+article.post:last-of-type {
+	border-bottom: none;
+}
+
+article.post h2 {
+	margin-bottom:15px;
+}
+
+section.comments {
+	padding:25px;
+	background-color:#efefef;
+}
+
+section.comments h2 {
+	border-bottom:1px solid #666;
+	margin-bottom:20px;
+}
+
+section.comments div.comment {
+	margin:0 0 15px 0;
+}
+
+section.comments div.comment h3 {
+	font-size:14px;
+	font-weight: bold;
+}
+
+section.comments form {
+	margin:0 0 20px 0;
+}
+
+section.comments form textarea {
+	width:100%;
+}
+
+aside.sidebar {
+	width:18%;
+	float:right;
+	text-align: right;
+}
+
+aside.sidebar div {
+	padding:15px 0 10px 0;
+	border-bottom:1px solid #666;
+}
+
+aside.sidebar div:first-of-type {
+	padding:0 0 10px 0;
+}
+
+aside.sidebar div:last-of-type {
+	border-bottom: none;
+}
+
+aside.sidebar p#user_info {
+	font-size:13px;
+	margin:0 0 20px 0;
+}
+
+aside.sidebar ul {
+	list-style: none;
+	margin:10px 0;
+	padding:0;
+}
+
+aside.sidebar ul li {
+	margin:0 0 10px 0;
+}
+
+footer {
+	border-top:1px solid #666;
+	padding-top:20px;
+	clear:both;
+}
+
+footer p {
+	font-style: italic;
+	text-align: right;
+}

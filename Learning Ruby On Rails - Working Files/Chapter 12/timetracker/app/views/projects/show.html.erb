@@ -1,0 +1,30 @@
+<h1><%= @project.name %></h1>
+
+<p>Company: <%= @project.company.name %>
+<p>Default Rate: <%= @project.default_rate %></p>
+<p>Slug: <%= @project.slug %></p>
+<p>Owner: <%= @project.owner %></p>
+
+<p><%= link_to 'Edit Project', edit_project_path(@project) %></p>
+
+<div class="remoteform">
+	<h2>Add Work</h2>
+	<%= render partial: 'works/form', locals: {doajax: true} %>
+</div>
+
+<% if @project.works.size > 0 %>
+	<table>
+		<tbody>
+			<tr id="headerrow">
+				<th>View</th>
+				<th>User</th>
+				<th>Project</th>
+				<th>Date/Time</th>
+				<th>Hours</th>
+			</tr>
+			<%= render partial: "works/work", collection: @project.works %>
+		</tbody>
+	</table>
+<% else %>
+	<p>No work items</p>
+<% end %>

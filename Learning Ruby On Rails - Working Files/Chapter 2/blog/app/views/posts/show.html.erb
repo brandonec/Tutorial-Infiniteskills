@@ -1,0 +1,16 @@
+<h1><%= @post %></h1>
+<article class="fullpost">
+	<%= category_date_author_comments(@post) %>
+	<%= author_edit_link(@post) %>
+	<%= simple_format @post.content %>
+
+	<section class="comments">
+		<h2 id="commentlabel">Comments (<span id="num_comments"><%= @post.comments.size %></span>)</h2>
+		<% if user_signed_in? %>
+			<%= render 'comments/form' %>
+		<% else %>
+			<p><em>You must <%= link_to 'login', new_user_session_path %> to post comments</em></p>
+		<% end %>
+		<%= render partial: 'comments/comment', collection: @post.comments.order('created_at desc') %>
+	</section>
+</article>

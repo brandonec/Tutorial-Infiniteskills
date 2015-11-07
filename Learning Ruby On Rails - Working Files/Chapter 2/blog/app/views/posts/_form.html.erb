@@ -1,0 +1,21 @@
+<%= form_for @post do |f| %>
+	<div>
+		<%= f.label :title %>
+		<%= f.text_field :title %>
+	</div>
+	<div>
+		<%= f.label :excerpt %>
+		<%= f.text_field :excerpt %>
+	</div>
+	<div class="checkboxes">
+		<label class="block">Categor/ies</label>
+		<%= f.collection_check_boxes(:category_ids, Category.all, :id, :title) %>
+	</div>
+	<div>
+		<%= f.label :content %>
+		<%= f.text_area :content, size: "12x12" %>
+	</div>
+	<div>
+		<%= f.submit @post.new_record? ? "Create Post" : "Update Post"  %>
+	</div>
+<% end %>

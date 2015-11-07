@@ -1,0 +1,41 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+# This model initially had no columns defined.  If you add columns to the
+# model remove the '{}' from the fixture names and add the columns immediately
+# below each fixture, per the syntax in the comments below
+#
+hello:
+  id: 1
+  title: 'Hello World'
+  content: "Lorem ipsum dolor sit amet, stet idque iisque id pro, sit id nominavi pericula cotidieque. Duo graece oporteat oportere ne, error senserit dissentiunt at sit, ex mucius laoreet mei. Vel in reque eligendi. An duo quot deleniti elaboraret, ipsum epicuri delectus cum an, porro impetus detraxit te eos.\n\nUtinam tamquam appellantur qui et, cum ne dicat malorum definiebas, nullam ancillae consulatu his in. Eos no sonet detraxit. Legimus luptatum pri no, eum te ubique ridens cetero, vim ea enim dignissim. Eu magna malis adipisci sed, mei cu tota consequat. Te pri illud argumentum, sea ut malorum detraxit vituperatoribus.\n\nVim cu eripuit appareat disputationi, assum putant complectitur qui cu, ei eos ornatus ullamcorper. Vim alii deserunt an. Ea sea vitae corpora democritum. Ut mel affert luptatum scripserit. Id labitur tractatos pri, munere alterum has ut.\n\nAdhuc semper nec ut, ius eu dolore putent. Cum et solet numquam appetere. Quo et labitur blandit percipit, quo in alii quot dissentiunt. Agam unum offendit cum eu. At pro praesent urbanitas, eam laoreet tacimates repudiandae ut, aperiri molestie vis ei.\n\nMei volutpat comprehensam at, an amet tempor pro. Option corrumpit has et. Mel dicam percipit id. Ex cum debet accusamus contentiones. Sea eu quando ornatus, vis id liber inciderint."
+  excerpt: 'A first sample post'
+  created_at: <%= Time.now + 1.week %>
+  user_id: 1
+lester:
+  id: 2
+  title: 'Lester Young - Tenor Saxophonist'
+  content: "Coming to prominence while a member of Count Basie's orchestra, Young was one of the most influential players on his instrument. In contrast to many of his hard-driving peers, Young played with a relaxed, cool tone and used sophisticated harmonies, using \"a free-floating style, wheeling and diving like a gull, banking with low, funky riffs that pleased dancers and listeners alike\"\n\nFamous for his hip, introverted style,he invented or popularized much of the hipster jargon which came to be associated with the music.\n\nTaken from <a href=\"http://en.wikipedia.org/wiki/Lester_Young\">http://en.wikipedia.org/wiki/Lester_Young</a>"
+  excerpt: 'Lester Willis Young (August 27, 1909 – March 15, 1959), nicknamed "Pres" or "Prez", was an American jazz tenor saxophonist and sometime clarinetist.'
+  created_at: <%= Time.now + 1.day %>
+  user_id: 1
+bebop:
+  id: 3
+  title: 'Bebop - a Jazz Style'
+  content: "Bebop or bop is a style of jazz characterized by fast tempo, instrumental virtuosity, and improvisation based on the combination of harmonic structure and melody. It was developed in the early and mid-1940s. It first surfaced in musicians' argot some time during the first two years of American involvement in the Second World War. This style of jazz ultimately became synonymous with modern jazz, as either category reached a certain final maturity in the 1960s.\n\nThe term \"bebop\" is usually stated to derive from nonsense syllables (vocables) used in scat singing, and is supposed to have been first attested in 1928. Some researchers speculate that it was a term used by Charlie Christian, because it sounded like something he hummed along with his playing. Dizzy Gillespie tells that the audiences coined the name after hearing him scat the then-nameless tunes to his players and the press ultimately picked it up, using it as an official term: \"People, when they'd wanna ask for those numbers and didn't know the name, would ask for bebop.\"\n\nTaken from <a href=\"http://en.wikipedia.org/wiki/Bebop\">http://en.wikipedia.org/wiki/Bebop</a>"
+  excerpt: 'Bebop or bop is a style of jazz characterized by fast tempo, instrumental virtuosity, and improvisation based on the combination of harmonic structure and melody.'
+  created_at: <%= Time.now - 4.weeks %>
+  user_id: 2
+prem:
+  id: 4
+  title: 'Premier League: England''s Top Football'
+  content: "The Premier League is an English professional league for men's association football clubs. At the top of the English football league system, it is the country's primary football competition. Contested by 20 clubs, it operates on a system of promotion and relegation with the Football League. Besides English clubs, some of the Welsh clubs can also qualify to play, and participation by some Scottish or Irish clubs has also been mooted.\n\nThe Premier League is a corporation in which the 20 member clubs act as shareholders. Seasons run from August to May, with teams playing 38 matches each, totalling 380 matches in the season. Most games are played in the afternoons of Saturdays and Sundays, the other games during weekday evenings. It is currently sponsored by Barclays Bank and thus officially known as the Barclays Premier League. Outside of England it is commonly referred to as the English Premier League (EPL).\n\nTaken from <a href=\"http://en.wikipedia.org/wiki/Premier_League\">http://en.wikipedia.org/wiki/Premier_League</a>"
+  excerpt: 'The Premier League is an English professional league for men''s association football clubs.'
+  created_at: <%= Time.now + 2.days %>
+  user_id: 4
+mets:
+  id: 5
+  title: 'New York Mets'
+  content: "The New York Mets are a professional baseball team based in the borough of Queens in New York City. They play in Major League Baseball's National League East Division. One of baseball's first expansion teams, the Mets were founded in 1962 to replace New York's departed National League teams, the Brooklyn Dodgers and New York Giants. The Mets' colors are composed of the Dodgers' blue and Giants' orange. During the 1962 and 1963 seasons, the Mets played their home games at the Polo Grounds. From 1964 to 2008, the Mets' home ballpark was Shea Stadium. In 2009, they moved into a new ballpark, Citi Field.\n\nTaken from <a href=\"http://en.wikipedia.org/wiki/New_York_Mets\">http://en.wikipedia.org/wiki/New_York_Mets</a>"
+  excerpt: 'The New York Mets are a professional baseball team based in the borough of Queens in New York City.'
+  created_at: <%= Time.now + 8.days %>
+  user_id: 4
